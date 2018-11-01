@@ -2,6 +2,7 @@ var Airport = require('../src/Airport.js');
 
 describe('Airport', function () {
   var airport;
+  let plane = jasmine.createSpyObj('plane', ['fly', 'land']);
 
   beforeEach(function () {
     airport = new Airport();
@@ -17,19 +18,23 @@ describe('Airport', function () {
   });
 
   describe('#land', function () {
-
     it('instructs a plane to land', function () {
-      var plane = jasmine.createSpyObj('plane', ['fly', 'land']);
       airport.land(plane);
       expect(plane.land).toHaveBeenCalled();
     });
 
     it('stores a plane in the hangar', function () {
-      var plane = jasmine.createSpyObj('plane', ['fly', 'land']);
       airport.land(plane);
       expect(airport.hangar[0]).toEqual(plane);
-
     });
-
   });
+
+  describe('#fly', function () {
+    it('removes the plane from the hangar', function () {
+      airport.land(plane);
+      airport.takeoff(plane);
+      expect(airport.hangar[0]).toEqual(undefined);
+    })
+  })
+
 });
