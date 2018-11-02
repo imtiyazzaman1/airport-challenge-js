@@ -1,0 +1,28 @@
+{
+  "name": "airport-challenge-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "jasmine": "^3.3.0",
+    "jasmine-node": "^1.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imtiyazzaman1/airport-challenge-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imtiyazzaman1/airport-challenge-js/issues"
+  },
+  "homepage": "https://github.com/imtiyazzaman1/airport-challenge-js#readme"
+}
