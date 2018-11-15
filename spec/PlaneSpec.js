@@ -1,5 +1,3 @@
-var Plane = require('../src/Plane.js');
-
 describe("Plane", function () {
   var plane;
 

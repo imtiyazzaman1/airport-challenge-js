@@ -1,4 +1,3 @@
-
 function Airport(capacity) {
   this.CAPACITY = 20;
   this.hangar = [];
@@ -19,5 +18,3 @@ Airport.prototype.takeoff = function (plane) {
   var index = this.hangar.indexOf(plane);
   this.hangar.splice(index, 1);
 };
-
-module.exports = Airport;

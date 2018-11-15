@@ -1,5 +1,3 @@
-var Airport = require('../src/Airport.js');
-
 describe('Airport', function () {
   var airport;
   let plane = jasmine.createSpyObj('plane', ['fly', 'land']);

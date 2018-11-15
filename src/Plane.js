@@ -9,5 +9,3 @@ Plane.prototype.fly = function () {
 Plane.prototype.land = function () {
   this.isFlying = false;
 };
-
-module.exports = Plane;
