@@ -7,8 +7,7 @@
     "lib": "lib"
   },
   "dependencies": {
-    "jasmine": "^3.3.0",
-    "jasmine-node": "^1.16.2"
+    "jasmine": "^3.3.0"
   },
   "devDependencies": {},
   "scripts": {
